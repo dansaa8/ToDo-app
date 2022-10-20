@@ -1,0 +1,6 @@
+
+/* När en uppgift är klar (completed) så kommer dennna klassen att appliceras */
+.completed { 
+    text-decoration: line-through;
+    color: #888;
+}
