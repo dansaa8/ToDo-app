@@ -1,6 +1,71 @@
+h1 {
+    font-size: 75px;
+    margin: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+.container {
+    margin: auto;
+    margin-top: 40px; 
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 710px;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+    border-radius: 1px;
+    
+}
+
+div {
+}
 
 /* När en uppgift är klar (completed) så kommer dennna klassen att appliceras */
 .completed { 
     text-decoration: line-through;
     color: #888;
+}
+
+input {
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 3px;
+    width: 310px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+input:hover {
+    border: 1px solid rgb(26, 26, 26);
+}    
+input:focus {
+    border: 2px solid rgb(46, 110, 163);
+    border-radius: 3px;
+    outline: none;
+}
+
+button {
+    font-weight: bold;
+    height: 50px;
+    font-size: 20px;
+    padding: 5px 25px;
+    margin: 0px;;
+    vertical-align: middle;
+}
+
+.count {
+    margin: 20px;
+    font-size: 22px;
+    font-family: Calibri;
+    font-weight: bold;
 }

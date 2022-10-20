@@ -2,18 +2,23 @@
 <html lang="en">
   <head>
     <title>My ToDo</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>0 completed</p>
-    <!-- Här ska vi visa hur många uppgifter som är färdiga-->
-    <h1>My ToDo</h1>
-    <label for="input1"></label>
-    <input type="text" name="input1" />
-    <button>OK</button>
+    <div class="container">
+      <!-- Här ska vi visa hur många uppgifter som är färdiga-->
+      <h1>My ToDo</h1>
+      <p class="count">0 completed</p>
+      <label for="input1"></label>
+      <input type="text" name="input1" class="input1" />
+      <button>OK</button>
+    </div>
+    <small></small>
+    <!-- Visa ytterligare information -->
 
-    <small></small> <!-- Visa ytterligare information -->
-
-    <ul> <!-- JavaScript kommer att lägga till li element som barn till detta ul genom att användaren interagerar med domen-->
+    <ul>
+      <!-- JavaScript kommer att lägga till li element som barn till detta ul genom att användaren interagerar med domen-->
     </ul>
   </body>
 </html>
