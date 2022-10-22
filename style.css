@@ -26,17 +26,34 @@ body {
   align-content: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
   border-radius: 1px;
+  animation: container-appear 1.5s;
+  display: 0;
 }
 
-/* @keyframes container-appear {
-    0% {
-        opacity: 0;
-        margin-bottom: -500px;
-    }
-    */
+@keyframes container-appear {
+  0% {
+    margin-top: -200px;
+    opacity: 0%;
+  }
+  50% {
+    margin-top: 60px;
+    opacity: 50%;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 100%;
+  }
+}
+
 .container__header {
   font-size: 75px;
   margin: 5px;
+  opacity: 0;
+
+  animation-name: opacity-to-translucence;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .container__count {
@@ -45,6 +62,12 @@ body {
   font-size: 23px;
   font-family: Calibri;
   font-weight: bold;
+  opacity: 0;
+
+  animation-name: opacity-to-translucence;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .container__input {
   border: 1px solid rgb(107, 107, 107);
@@ -52,6 +75,16 @@ body {
   width: 310px;
   height: 50px;
   vertical-align: middle;
+  opacity: 0;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: serif;
+  padding-left: 5px;
+  animation-name: opacity-to-translucence;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .container__input:hover {
   border: 1px solid rgb(26, 26, 26);
@@ -68,6 +101,25 @@ body {
   padding: 4px 13px;
   margin-left: 7px;
   vertical-align: middle;
+  opacity: 0;
+
+  animation-name: opacity-to-translucence;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.container__infoToUser {
+  
+}
+
+@keyframes opacity-to-translucence {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 /* När en uppgift är klar (completed) så kommer dennna klassen att appliceras */
