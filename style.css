@@ -19,10 +19,11 @@ body {
 li {
   margin: 20px;
   position: relative;
-  animation-name: li-appear;
-  animation-duration: 0.5s;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  
+  animation-name: li-appear;
+  animation-duration: 0.5s;
 }
 
 @keyframes li-appear {
@@ -94,6 +95,7 @@ li {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
 .container__input {
   border: 1px solid rgb(107, 107, 107);
   border-radius: 3px;
@@ -112,9 +114,11 @@ li {
   animation-fill-mode: forwards;
   margin-top: 25px;
 }
+
 .container__input:hover {
   border: 1px solid rgb(26, 26, 26);
 }
+
 .container__input:focus {
   border: 2px solid rgb(46, 110, 163);
   border-radius: 3px;
@@ -161,4 +165,16 @@ li {
 .completed {
   text-decoration: line-through;
   color: #888;
+  animation-name: completedTask-to-transulucence;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes completedTask-to-transulucence {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
 }

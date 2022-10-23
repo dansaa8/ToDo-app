@@ -44,9 +44,9 @@ btnAddTask.addEventListener("click", function () {
     li.appendChild(trashCan);
 
     trashCan.addEventListener("click", function () {
-      if (li.getAttribute("class") == "completed") {
-        count--;
-      }
+      // if (li.getAttribute("class") == "completed") {
+      //   count--;
+      // }
       removeObjFromArr(taskInfo.innerText);
       li.remove();
       completedTasks.innerText = `${count} completed`;
