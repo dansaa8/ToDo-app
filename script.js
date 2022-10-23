@@ -41,7 +41,6 @@ btnAddTask.addEventListener("click", function () {
 
     const trashCan = document.createElement("span");
     trashCan.innerHTML = "  &#x1F5D1";
-    trashCan.setAttribute("class", "trashcan"); //vad fan gör denna?
     li.appendChild(trashCan);
 
     trashCan.addEventListener("click", function () {

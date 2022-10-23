@@ -20,13 +20,13 @@ li {
   margin: 20px;
   position: relative;
   animation-name: li-appear;
-  animation-duration: 0.5s; 
+  animation-duration: 0.5s;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes li-appear {
- 0% { 
+  0% {
     top: 0px;
     opacity: 0%;
   }
@@ -105,6 +105,7 @@ li {
   font-size: 33px;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 5px;
+
   animation-name: opacity-to-translucence;
   animation-delay: 2.5s;
   animation-duration: 1s;
@@ -141,10 +142,10 @@ li {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: bold;
+
   animation-name: opacity-to-translucence;
   animation-iteration-count: 3;
-  animation-duration: 1s;
-
+  animation-duration: 0.5s;
 }
 
 @keyframes opacity-to-translucence {
