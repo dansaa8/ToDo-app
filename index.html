@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <title>My ToDo</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <!-- Här ska vi visa hur många uppgifter som är färdiga-->
       <h1 class="container__header">My ToDo</h1>
-      <p class="container__count">0 completed</p>
+      <p class="container__completedTasks">0 completed</p>
       <label for="container__input"></label>
       <input type="text" name="container__input" class="container__input" />
       <button class="container__button">OK</button>
-      <p class="container__infoToUser">InfoToUser</p>
+      <p class="container__infoToUser"></p>
+      <ul class="container__ul">
+        <!-- JavaScript kommer att lägga till li element som barn till detta ul genom att användaren interagerar med domen-->
+      </ul>
     </div>
     <!-- Visa ytterligare information -->
-
-    <ul class="container__list">
-      <!-- JavaScript kommer att lägga till li element som barn till detta ul genom att användaren interagerar med domen-->
-    </ul>
+    
+    <script src="script.js"></script>
   </body>
 </html>
